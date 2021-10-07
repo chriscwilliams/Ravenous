@@ -8,7 +8,6 @@ const Yelp = {
         }).then(jsonResponse => {
             if (jsonResponse.businesses) {
                 return jsonResponse.businesses.map(business => {
-                    console.log(business); /* To see the returned business object you can delete later */
                     return {
                         id: business.id,
                         imageSrc: business.image_url,
